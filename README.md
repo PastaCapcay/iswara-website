@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Iswara - Website Produk Pertanian Premium
 
-## Getting Started
+![Iswara Logo](public/logo.png)
 
-First, run the development server:
+Website resmi untuk produk pertanian premium Iswara dari Gunung Telomoyo. Website ini menampilkan produk berkualitas tinggi seperti kopi, vanili, dan produk pertanian lainnya yang dibudidayakan dengan penuh dedikasi oleh Pak Is di lereng Gunung Telomoyo.
 
+## 📋 Deskripsi
+
+Iswara adalah merek produk pertanian premium yang mengutamakan kualitas dan keberlanjutan. Website ini dibuat untuk menampilkan produk-produk Iswara kepada calon pembeli dengan tampilan yang menarik dan responsif.
+
+Fitur utama website:
+- Tampilan produk premium (kopi, vanili, dan lainnya)
+- Informasi tentang proses produksi 
+- Kontak dan lokasi kebun
+- Tampilan responsif untuk semua ukuran perangkat
+- Integrasi dengan WhatsApp untuk pemesanan
+
+## 🚀 Teknologi
+
+Website ini dibangun menggunakan:
+- [Next.js 14](https://nextjs.org/) - Framework React untuk aplikasi web
+- [Tailwind CSS](https://tailwindcss.com/) - Framework CSS untuk desain cepat
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript dengan tipe data
+- [React](https://reactjs.org/) - Library JavaScript untuk UI
+
+## 💻 Instalasi dan Penggunaan
+
+### Prasyarat
+- Node.js (versi 18 atau lebih baru)
+- npm atau yarn
+
+### Langkah-langkah
+
+1. Clone repository ini
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/PastaCapcay/iswara-website.git
+cd iswara-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies
+```bash
+npm install
+# atau
+yarn install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Jalankan server pengembangan
+```bash
+npm run dev
+# atau
+yarn dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Buka [http://localhost:3000](http://localhost:3000) di browser Anda
 
-## Learn More
+### Build untuk Produksi
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📁 Struktur Proyek
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+iswara-website/
+├── public/                 # Aset publik (gambar, favicon, dll)
+│   └── gambar/             # Gambar produk dan lokasi
+├── src/                    # Kode sumber
+│   ├── app/                # Komponen dan halaman aplikasi
+│   │   └── page.tsx        # Halaman utama
+│   ├── components/         # Komponen React yang dapat digunakan kembali
+│   └── styles/             # File CSS global
+├── .gitignore              # File yang diabaikan Git
+├── next.config.mjs         # Konfigurasi Next.js
+├── package.json            # Dependencies dan skrip
+├── postcss.config.mjs      # Konfigurasi PostCSS
+├── tailwind.config.js      # Konfigurasi Tailwind CSS
+└── tsconfig.json           # Konfigurasi TypeScript
+```
 
-## Deploy on Vercel
+## 🌐 Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Website ini dapat di-deploy ke layanan hosting seperti Vercel, Netlify, atau layanan hosting statis lainnya.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+# Build statis untuk deployment
+npm run build
+```
+
+## 📝 Lisensi
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## 📞 Kontak
+
+Untuk informasi lebih lanjut, silakan hubungi [info@iswara.com](mailto:info@iswara.com) atau melalui WhatsApp di +62 812 3456 7890.
+
+---
+
+&copy; 2025 Iswara. Hak Cipta Dilindungi.

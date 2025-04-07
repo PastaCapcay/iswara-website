@@ -486,8 +486,8 @@ export default function Home() {
                 <div className="mt-4">
                   <a 
                     href="https://maps.google.com/maps?q=gunung+telomoyo&t=&z=13" 
-                    target="_blank"
-                    rel="noopener noreferrer" 
+          target="_blank"
+          rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-emerald-300 hover:text-white transition text-sm md:text-base"
                   >
                     <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
