@@ -3,6 +3,9 @@
 import Image from "next/image";
 import { useState } from "react";
 import OptimizedImage from './components/OptimizedImage';
+import Button from './components/Button';
+import LinkButton from './components/LinkButton';
+import LazySection from './components/LazySection';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -13,86 +16,114 @@ export default function Home() {
       <header className="fixed w-full bg-white/90 backdrop-blur-sm z-10 shadow-sm">
         <div className="container mx-auto flex justify-between items-center p-4">
           <div className="text-xl font-bold text-emerald-800 flex items-center gap-1.5">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-emerald-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
             </svg>
             <span>Iswara</span>
           </div>
-          <nav className="hidden md:flex gap-6">
+          <nav className="hidden md:flex gap-6" aria-label="Main navigation">
             <a href="#beranda" className="text-emerald-800 hover:text-emerald-600 transition">Beranda</a>
             <a href="#tentang" className="text-emerald-800 hover:text-emerald-600 transition">Tentang</a>
             <a href="#produk" className="text-emerald-800 hover:text-emerald-600 transition">Produk</a>
             <a href="#proses" className="text-emerald-800 hover:text-emerald-600 transition">Proses</a>
-            <a 
-              href="https://wa.me/6282221392314" 
+            <LinkButton
+              variant="outline"
+              size="sm"
+              href="https://wa.me/6282221392314"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-emerald-800 hover:text-emerald-600 transition"
+              leftIcon={
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+              }
             >
-              Kontak
-            </a>
+              Hubungi via WhatsApp
+            </LinkButton>
           </nav>
-          <button 
-            className="md:hidden text-emerald-800 z-20 bg-white p-2 rounded-md shadow-sm" 
+          <Button
+            variant="secondary"
+            size="sm"
+            className="md:hidden"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            aria-label="Toggle menu"
+            aria-label={mobileMenuOpen ? "Tutup menu" : "Buka menu"}
+            aria-expanded={mobileMenuOpen}
+            aria-controls="mobile-menu"
           >
             {mobileMenuOpen ? (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
             ) : (
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6" aria-hidden="true">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             )}
-          </button>
+          </Button>
         </div>
         
         {/* Mobile Menu */}
         {mobileMenuOpen && (
-          <div className="md:hidden fixed inset-0 pt-16 bg-white/95 backdrop-blur-sm shadow-lg flex flex-col items-center z-10">
+          <div 
+            id="mobile-menu"
+            className="md:hidden fixed inset-0 pt-16 bg-white/95 backdrop-blur-sm shadow-lg flex flex-col items-center z-10"
+            role="dialog"
+            aria-modal="true"
+            aria-label="Menu mobile"
+          >
             <div className="container flex flex-col items-center gap-4 text-lg py-8 px-4 bg-white rounded-lg shadow-inner">
-              <a 
-                href="#beranda" 
-                className="text-emerald-800 hover:text-emerald-600 transition py-3 px-6 bg-emerald-50 rounded-md w-full max-w-xs text-center"
+              <LinkButton
+                variant="secondary"
+                size="lg"
+                href="#beranda"
+                className="w-full max-w-xs"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Beranda
-              </a>
-              <a 
-                href="#tentang" 
-                className="text-emerald-800 hover:text-emerald-600 transition py-3 px-6 bg-emerald-50 rounded-md w-full max-w-xs text-center"
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                size="lg"
+                href="#tentang"
+                className="w-full max-w-xs"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Tentang
-              </a>
-              <a 
-                href="#produk" 
-                className="text-emerald-800 hover:text-emerald-600 transition py-3 px-6 bg-emerald-50 rounded-md w-full max-w-xs text-center"
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                size="lg"
+                href="#produk"
+                className="w-full max-w-xs"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Produk
-              </a>
-              <a 
-                href="#proses" 
-                className="text-emerald-800 hover:text-emerald-600 transition py-3 px-6 bg-emerald-50 rounded-md w-full max-w-xs text-center"
+              </LinkButton>
+              <LinkButton
+                variant="secondary"
+                size="lg"
+                href="#proses"
+                className="w-full max-w-xs"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Proses
-              </a>
-              <a 
-                href="https://wa.me/6282221392314" 
+              </LinkButton>
+              <LinkButton
+                variant="primary"
+                size="lg"
+                href="https://wa.me/6282221392314"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-6 py-3 bg-green-500 text-white rounded-md font-medium hover:bg-green-600 transition flex items-center justify-center gap-2 mt-2 w-full max-w-xs"
+                className="w-full max-w-xs"
+                leftIcon={
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" aria-hidden="true">
+                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                  </svg>
+                }
                 onClick={() => setMobileMenuOpen(false)}
               >
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                </svg>
                 Hubungi via WhatsApp
-              </a>
+              </LinkButton>
             </div>
           </div>
         )}
