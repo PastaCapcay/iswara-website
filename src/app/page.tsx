@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
+import OptimizedImage from './components/OptimizedImage';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -98,69 +99,62 @@ export default function Home() {
       </header>
 
       {/* Hero Section - Responsiveness Improved */}
-      <section id="beranda" className="pt-28 pb-12 md:pt-32 md:pb-16 bg-gradient-to-b from-emerald-50 to-white">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="md:w-1/2 space-y-4 md:space-y-6 text-center md:text-left">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-emerald-900 leading-tight">Produk Premium dari Tanah Telomoyo</h1>
-              <p className="text-base md:text-lg text-gray-700">Kopi, Vanili, dan Gaharu berkualitas tinggi yang dibudidayakan dengan penuh dedikasi oleh Pak Is di lereng gunung Telomoyo.</p>
-              <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-                <a href="#produk" className="px-6 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition text-sm md:text-base">Lihat Produk</a>
-                <a 
-                  href="https://wa.me/6282221392314" 
-                  target="_blank"
-                  rel="noopener noreferrer" 
-                  className="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition flex items-center gap-2 text-sm md:text-base"
-                >
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                  </svg>
-                  Chat WhatsApp
-                </a>
-              </div>
-            </div>
-            <div className="md:w-1/2 mt-8 md:mt-0">
-              <div className="relative h-[250px] sm:h-[300px] md:h-[350px] lg:h-[400px] w-full rounded-lg overflow-hidden shadow-xl">
-                <Image 
-                  src="/gambar/pohon-kopi.jpg" 
-                  alt="Pohon kopi di kebun Pak Is" 
-                  width={800}
-                  height={600}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+      <section id="beranda" className="relative min-h-screen flex items-center justify-center py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-emerald-900 to-emerald-800 text-white overflow-hidden">
+        <div className="absolute inset-0 bg-black/50 z-0"></div>
+        <div className="container mx-auto relative z-10">
+          <div className="max-w-3xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6" tabIndex={0}>
+              Kopi & Vanili Premium dari Lereng Gunung Telomoyo
+            </h1>
+            <p className="text-lg md:text-xl text-emerald-100 mb-8" tabIndex={0}>
+              Nikmati kualitas terbaik dari kebun kami yang dibudidayakan dengan penuh dedikasi oleh Pak Is
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <a 
+                href="#produk" 
+                className="px-6 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition text-sm md:text-base"
+                aria-label="Lihat produk kami"
+              >
+                Lihat Produk
+              </a>
+              <a 
+                href="https://wa.me/6282221392314" 
+                target="_blank"
+                rel="noopener noreferrer" 
+                className="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition flex items-center gap-2 text-sm md:text-base"
+                aria-label="Chat dengan kami di WhatsApp"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+                </svg>
+                Chat WhatsApp
+              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Tentang Section - Improved for small screens */}
-      <section id="tentang" className="py-12 md:py-16">
-        <div className="container mx-auto px-4 md:px-8">
-          <h2 className="text-2xl md:text-3xl font-bold text-center mb-8 md:mb-12 text-emerald-800">Tentang Pak Is</h2>
-          <div className="flex flex-col md:flex-row items-center gap-8">
+      <section id="tentang" className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+        <div className="container mx-auto">
+          <div className="flex flex-col md:flex-row items-center gap-12">
             <div className="w-full md:w-1/2">
-              <div className="relative h-[250px] sm:h-[300px] md:h-[350px] w-full rounded-lg overflow-hidden shadow-xl">
-                <Image 
-                  src="/gambar/pohon-kopi-2.jpg" 
-                  alt="Pak Is di kebun kopi" 
-                  width={800}
-                  height={600}
-                  className="object-cover w-full h-full"
-                />
-              </div>
+              <OptimizedImage
+                src="/gambar/pohon-kopi.jpg"
+                alt="Kebun Kopi Telomoyo"
+                width={800}
+                height={600}
+                className="object-cover w-full h-full rounded-lg shadow-xl"
+              />
             </div>
             <div className="w-full md:w-1/2 space-y-4 mt-6 md:mt-0">
-              <h3 className="text-xl md:text-2xl font-semibold text-emerald-700 text-center md:text-left">Petani dengan Dedikasi Tinggi</h3>
-              <p className="text-gray-700 text-sm md:text-base text-justify">
+              <h3 className="text-xl md:text-2xl font-semibold text-emerald-700 text-center md:text-left" tabIndex={0}>Petani dengan Dedikasi Tinggi</h3>
+              <p className="text-gray-700 text-sm md:text-base text-justify" tabIndex={0}>
                 Pak Is telah mengabdikan hidupnya untuk membudidayakan produk berkualitas tinggi di lereng gunung Telomoyo selama lebih dari 20 tahun. Dengan pemahaman mendalam tentang tanah dan iklim lokal, beliau berhasil menghasilkan produk dengan kualitas terbaik.
               </p>
-              <p className="text-gray-700 text-sm md:text-base text-justify">
+              <p className="text-gray-700 text-sm md:text-base text-justify" tabIndex={0}>
                 Filosofi bertani Pak Is berlandaskan pada keberlanjutan dan ramah lingkungan. Tanpa menggunakan bahan kimia berbahaya, beliau memastikan setiap produk aman dikonsumsi dan memberikan manfaat maksimal bagi konsumen.
               </p>
-              <div className="pt-4 text-center md:text-left">
-                <a href="#proses" className="text-emerald-600 font-medium hover:underline">Pelajari proses budidaya kami →</a>
-              </div>
             </div>
           </div>
         </div>
@@ -208,7 +202,7 @@ export default function Home() {
             {/* Vanili */}
             <div className="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition">
               <div className="h-[200px] sm:h-48 relative">
-            <Image
+                <Image
                   src="/gambar/vanili-kering.jpg" 
                   alt="Vanili Telomoyo" 
                   width={600}
@@ -258,8 +252,8 @@ export default function Home() {
                   <span className="text-emerald-700 font-medium text-sm md:text-base">Hubungi untuk harga</span>
                   <a 
                     href="https://wa.me/6282221392314?text=Halo%20Pak%20Is,%20saya%20tertarik%20dengan%20Vanili%20Hijau%20Telomoyo" 
-            target="_blank"
-            rel="noopener noreferrer"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-emerald-600 hover:underline flex items-center gap-1"
                   >
                     <span>Detail</span>
@@ -287,11 +281,11 @@ export default function Home() {
               </div>
               <h3 className="text-lg md:text-xl font-semibold text-emerald-800 mb-2">Budidaya</h3>
               <div className="relative w-full h-36 mb-3 rounded-md overflow-hidden">
-                <Image 
-                  src="/gambar/vanili-di-pohon.jpg" 
-                  alt="Budidaya vanili" 
-                  width={500}
-                  height={300}
+                <OptimizedImage
+                  src="/gambar/vanili-di-pohon.jpg"
+                  alt="Kebun Vanili Telomoyo"
+                  width={800}
+                  height={600}
                   className="object-cover w-full h-full"
                 />
               </div>
