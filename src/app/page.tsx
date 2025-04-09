@@ -23,9 +23,9 @@ export default function Home() {
             <a href="#produk" className="text-emerald-800 hover:text-emerald-600 transition">Produk</a>
             <a href="#proses" className="text-emerald-800 hover:text-emerald-600 transition">Proses</a>
             <a 
-              href="https://wa.me/6281234567890" 
-            target="_blank"
-            rel="noopener noreferrer"
+              href="https://wa.me/6282221392314" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-emerald-800 hover:text-emerald-600 transition"
             >
               Kontak
@@ -81,7 +81,7 @@ export default function Home() {
                 Proses
               </a>
               <a 
-                href="https://wa.me/6281234567890" 
+                href="https://wa.me/6282221392314" 
                 target="_blank"
                 rel="noopener noreferrer"
                 className="px-6 py-3 bg-green-500 text-white rounded-md font-medium hover:bg-green-600 transition flex items-center justify-center gap-2 mt-2 w-full max-w-xs"
@@ -107,7 +107,7 @@ export default function Home() {
               <div className="flex flex-wrap gap-4 justify-center md:justify-start">
                 <a href="#produk" className="px-6 py-3 bg-emerald-600 text-white rounded-full font-medium hover:bg-emerald-700 transition text-sm md:text-base">Lihat Produk</a>
                 <a 
-                  href="https://wa.me/6281234567890" 
+                  href="https://wa.me/6282221392314" 
                   target="_blank"
                   rel="noopener noreferrer" 
                   className="px-6 py-3 bg-green-500 text-white rounded-full font-medium hover:bg-green-600 transition flex items-center gap-2 text-sm md:text-base"
@@ -152,10 +152,10 @@ export default function Home() {
             </div>
             <div className="w-full md:w-1/2 space-y-4 mt-6 md:mt-0">
               <h3 className="text-xl md:text-2xl font-semibold text-emerald-700 text-center md:text-left">Petani dengan Dedikasi Tinggi</h3>
-              <p className="text-gray-700 text-sm md:text-base">
+              <p className="text-gray-700 text-sm md:text-base text-justify">
                 Pak Is telah mengabdikan hidupnya untuk membudidayakan produk berkualitas tinggi di lereng gunung Telomoyo selama lebih dari 20 tahun. Dengan pemahaman mendalam tentang tanah dan iklim lokal, beliau berhasil menghasilkan produk dengan kualitas terbaik.
               </p>
-              <p className="text-gray-700 text-sm md:text-base">
+              <p className="text-gray-700 text-sm md:text-base text-justify">
                 Filosofi bertani Pak Is berlandaskan pada keberlanjutan dan ramah lingkungan. Tanpa menggunakan bahan kimia berbahaya, beliau memastikan setiap produk aman dikonsumsi dan memberikan manfaat maksimal bagi konsumen.
               </p>
               <div className="pt-4 text-center md:text-left">
@@ -191,7 +191,7 @@ export default function Home() {
                 <div className="flex justify-between items-center">
                   <span className="text-emerald-700 font-medium text-sm md:text-base">Mulai Rp 85.000/250gr</span>
                   <a 
-                    href="https://wa.me/6281234567890?text=Halo%20Pak%20Is,%20saya%20tertarik%20dengan%20Kopi%20Telomoyo" 
+                    href="https://wa.me/6282221392314?text=Halo%20Pak%20Is,%20saya%20tertarik%20dengan%20Kopi%20Telomoyo" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-emerald-600 hover:underline flex items-center gap-1"
@@ -224,7 +224,7 @@ export default function Home() {
                 <div className="flex justify-between items-center">
                   <span className="text-emerald-700 font-medium text-sm md:text-base">Mulai Rp 120.000/100gr</span>
                   <a 
-                    href="https://wa.me/6281234567890?text=Halo%20Pak%20Is,%20saya%20tertarik%20dengan%20Vanili%20Telomoyo" 
+                    href="https://wa.me/6282221392314?text=Halo%20Pak%20Is,%20saya%20tertarik%20dengan%20Vanili%20Telomoyo" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="text-emerald-600 hover:underline flex items-center gap-1"
@@ -257,7 +257,7 @@ export default function Home() {
                 <div className="flex justify-between items-center">
                   <span className="text-emerald-700 font-medium text-sm md:text-base">Hubungi untuk harga</span>
                   <a 
-                    href="https://wa.me/6281234567890?text=Halo%20Pak%20Is,%20saya%20tertarik%20dengan%20Vanili%20Hijau%20Telomoyo" 
+                    href="https://wa.me/6282221392314?text=Halo%20Pak%20Is,%20saya%20tertarik%20dengan%20Vanili%20Hijau%20Telomoyo" 
             target="_blank"
             rel="noopener noreferrer"
                     className="text-emerald-600 hover:underline flex items-center gap-1"
@@ -392,44 +392,27 @@ export default function Home() {
             <div className="w-full md:w-1/2">
               <h3 className="text-lg md:text-xl font-semibold mb-4 text-center md:text-left">Informasi Kontak</h3>
               <div className="space-y-4">
-                <div className="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6 text-emerald-300 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                  </svg>
+                <div className="flex items-center gap-3">
+                  <div className="bg-emerald-100 p-2 rounded-full">
+                    <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
                   <div>
-                    <p className="font-medium text-sm md:text-base">Telepon/WhatsApp</p>
-                    <a 
-                      href="https://wa.me/6281234567890" 
-          target="_blank"
-          rel="noopener noreferrer"
-                      className="text-emerald-200 hover:text-white transition flex items-center gap-2 mt-1 text-sm md:text-base"
-                    >
-                      +62 812 3456 7890
-                      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" viewBox="0 0 16 16" className="text-green-400">
-                        <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
-                      </svg>
-                    </a>
+                    <p className="text-sm text-gray-600">Telepon</p>
+                    <a href="https://wa.me/6282221392314" className="text-emerald-600 hover:text-emerald-700 font-medium">+62 822-2139-2314</a>
                   </div>
                 </div>
-                
-                <div className="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6 text-emerald-300 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
-                  <div>
-                    <p className="font-medium text-sm md:text-base">Email</p>
-                    <p className="text-emerald-200 text-sm md:text-base">info@iswara.com</p>
+                <div className="flex items-center gap-3">
+                  <div className="bg-emerald-100 p-2 rounded-full">
+                    <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
                   </div>
-                </div>
-                
-                <div className="flex items-start gap-3">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 md:h-6 md:w-6 text-emerald-300 flex-shrink-0 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                  </svg>
                   <div>
-                    <p className="font-medium text-sm md:text-base">Alamat</p>
-                    <p className="text-emerald-200 text-sm md:text-base">Desa Telomoyo, Kecamatan Kaliangkrik, Kabupaten Magelang, Jawa Tengah</p>
+                    <p className="text-sm text-gray-600">Alamat</p>
+                    <p className="text-white">Dusun Kendal Duwur RT 2 RW 2, Kelurahan Wirogomo, Kec Banyubiru, Kab Semarang 50664</p>
                   </div>
                 </div>
               </div>
@@ -461,7 +444,7 @@ export default function Home() {
               <div className="bg-emerald-800 rounded-lg p-4 md:p-6 text-center h-full">
                 <div className="bg-emerald-700/50 h-[200px] sm:h-[250px] rounded-lg overflow-hidden relative">
                   <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63304.00299783626!2d110.35152642035931!3d-7.391667037927146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a7dda5928df7d%3A0x67592e2ffb468d7!2sGunung%20Telomoyo!5e0!3m2!1sid!2sid!4v1720329987428!5m2!1sid!2sid" 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.888965085!2d110.3311113!3d-7.3916670!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a7dda5928df7d%3A0x67592e2ffb468d7!2sDusun%20Kendal%20Duwur%2C%20Wirogomo%2C%20Banyubiru%2C%20Semarang%20Regency%2C%20Central%20Java!5e0!3m2!1sid!2sid!4v1720329987428!5m2!1sid!2sid" 
                     width="100%" 
                     height="100%" 
                     style={{ border: 0 }} 
@@ -470,31 +453,18 @@ export default function Home() {
                     referrerPolicy="no-referrer-when-downgrade"
                     className="absolute inset-0"
                   ></iframe>
-                  <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                    <div className="text-center bg-emerald-950/70 p-3 rounded-lg">
-                      <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8 mx-auto text-emerald-300" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                      </svg>
-                      <p className="mt-2 text-sm md:text-base text-emerald-100 font-medium">Gunung Telomoyo</p>
-                    </div>
-                  </div>
                 </div>
-                <p className="text-sm md:text-base text-emerald-100 mt-4">
-                  Kebun kami terletak di lereng Gunung Telomoyo dengan ketinggian ideal dan tanah yang subur. Kunjungi kami untuk melihat langsung proses budidaya.
-                </p>
                 <div className="mt-4">
                   <a 
-                    href="https://maps.google.com/maps?q=gunung+telomoyo&t=&z=13" 
-          target="_blank"
-          rel="noopener noreferrer"
+                    href="https://maps.google.com/maps?q=Dusun+Kendal+Duwur+RT+2+RW+2+Wirogomo+Banyubiru+Semarang" 
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 text-emerald-300 hover:text-white transition text-sm md:text-base"
                   >
-                    <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-                    </svg>
                     Lihat di Google Maps
+                    <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                    </svg>
                   </a>
                 </div>
               </div>
@@ -533,7 +503,7 @@ export default function Home() {
               <div>
                 <h3 className="text-sm md:text-base font-medium mb-2 md:mb-3">Kontak</h3>
                 <ul className="space-y-1.5 text-xs md:text-sm text-gray-300">
-                  <li><a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition">WhatsApp</a></li>
+                  <li><a href="https://wa.me/6282221392314" target="_blank" rel="noopener noreferrer" className="hover:text-emerald-400 transition">WhatsApp</a></li>
                   <li><a href="mailto:info@iswara.com" className="hover:text-emerald-400 transition">Email</a></li>
                   <li><a href="#" className="hover:text-emerald-400 transition">Facebook</a></li>
                   <li><a href="#" className="hover:text-emerald-400 transition">Instagram</a></li>
@@ -557,7 +527,7 @@ export default function Home() {
       {/* WhatsApp Floating Button - Mobile Responsive */}
       <div className="fixed bottom-4 right-4 z-50">
         <a 
-          href="https://wa.me/6281234567890" 
+          href="https://wa.me/6282221392314" 
           target="_blank"
           rel="noopener noreferrer"
           className="w-12 h-12 md:w-14 md:h-14 flex items-center justify-center bg-green-500 rounded-full shadow-lg hover:bg-green-600 transition-all duration-300 hover:scale-110"
