@@ -2,7 +2,15 @@
 
 ![Iswara Logo](public/logo.png)
 
-Website resmi untuk produk pertanian premium Iswara dari Gunung Telomoyo. Website ini menampilkan produk berkualitas tinggi seperti kopi, vanili, dan produk pertanian lainnya yang dibudidayakan dengan penuh dedikasi oleh Pak Is di lereng Gunung Telomoyo.
+## 🌿 About
+
+Iswara adalah usaha pertanian premium yang berlokasi di lereng Gunung Telomoyo, Jawa Tengah. Didirikan oleh Pak Is, seorang petani berpengalaman dengan dedikasi tinggi terhadap kualitas produk pertanian. Kami mengkhususkan diri dalam produksi:
+
+- Kopi Arabika premium dengan pengolahan yang teliti
+- Vanili berkualitas tinggi yang dibudidayakan secara organik
+- Produk pertanian premium lainnya dari lereng Gunung Telomoyo
+
+Komitmen kami adalah menghasilkan produk pertanian terbaik dengan memperhatikan keberlanjutan lingkungan dan kesejahteraan petani lokal.
 
 ## 📋 Deskripsi
 
@@ -94,7 +102,9 @@ npm run build
 
 ## 📞 Kontak
 
-Untuk informasi lebih lanjut, silakan hubungi [info@iswara.com](mailto:info@iswara.com) atau melalui WhatsApp di +62 812 3456 7890.
+Untuk informasi lebih lanjut dan pemesanan, silakan hubungi:
+- Email: [rharif51@gmail.com](mailto:rharif51@gmail.com)
+- WhatsApp: [+62 895391166633](https://wa.me/62895391166633)
 
 ---
 
