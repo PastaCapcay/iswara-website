@@ -5,7 +5,6 @@ import { useState } from "react";
 import OptimizedImage from './components/OptimizedImage';
 import Button from './components/Button';
 import LinkButton from './components/LinkButton';
-import LazySection from './components/LazySection';
 
 export default function Home() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
